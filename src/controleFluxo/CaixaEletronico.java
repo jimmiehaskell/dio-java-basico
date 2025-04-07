@@ -37,7 +37,14 @@ public class CaixaEletronico {
             System.out.println("Reprovado");
         }
     }
+
+    public static void resultadoEscolar() {
+        int nota = 7;
+        String resultado = nota >= 7 ? "Aprovado" : nota >= 5 && nota < 7 ? "Prova de recuperação" : "Reprovado";
+
+        System.err.printf("Resultado: %s.\n", resultado);
+    }
     public static void main(String[] args) {
-        controleFluxoEncadeado();
+        resultadoEscolar();
     }
 }
